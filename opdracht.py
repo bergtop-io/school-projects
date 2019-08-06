@@ -5,13 +5,14 @@ import os
 import sys
 import subprocess
 
+## Deze functie werkt niet meer, waarschijnlijk vanwege pip deprecation, reproduction op andere pc geeft zelfde errors.
 # Volgende functie installeert de benodigde modules, hoofdscript wordt sowieso uitgevoerd.
-dependencies = ["easygui", "hashlib", "sqlite3"]
-def install(name):
-    subprocess.call(["pip", "install", name])
+# dependencies = ["easygui", "hashlib", "sqlite3"]
+# def install(name):
+#     subprocess.call(["pip", "install", name])
 
-for x in dependencies:
-    install(x)
+# for x in dependencies:
+#     install(x)
 
 import hashlib
 import easygui as eg
